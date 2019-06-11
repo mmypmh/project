@@ -5,9 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<h1>Heading</h1>
+    <!-- 
+                <Basic Navbar>
+        <nav>   navbar
+        <nav>   navbar-expand-xl|lg|md|sm|
+        <ul>    navbar-nav    
+        <li>    nav-item
+        <a>     nav-link
+
+            <Appearance>
+        <nav>   navbar-dark
+        <nav>   navbar-light
+        <nav>   bg-dark
+        <nav>   bg-light
+        <span>  navbar-text
+        <a>     navbar-brand
+
+            <Positon>
+        <nav>   fixed-top
+        <nav>   fixed-bottom
+        <nav>   sticky-top
+
+            <Collapse>
+        <button>    navbar-toggler
+            data-toggle     collapse
+            data-target     target-name
+        <div>   collapse
+        <div>   navbar-collapse
+        id      target-name
+
+            <dropdown>
+        <li>    dropdown
+        <a>     dropdown-toggle
+            data-toggle="dropdown"
+            data-target="target_name"
+        <div>   dropdown-menu
+            aria-labelledby="target_name"
+        <div>   dropdown-divider
+        <a>     dropdown-item
+
+        
+     -->
+     <div class="jumbotron text-center" style="margin-bottom:0px">
+         <h1>Hello World</h1>
+         <p>Say Something!</p>
+     </div>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#collapse_toggle">
+            <span class="navbar-toggle-icons"><i class="fal fa-acorn"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_toggle">
+            <a href="#" class="navbar-brand"><i class="fa fa-android"></i></a>
+            <span class="navbar-text">Clever Teachnical</span>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">
+                        Dropdown
+                        <span class="caret"></span>
+                    </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdown-target">
+                        <ul class="navbar-nav">
+                            <a href="#" class="dropdown-item">HTML</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">CSS</a>
+                            <a href="#" class="dropdown-item">Bootstrap</a>
+                            <a href="#" class="dropdown-item">JavaScript</a>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link 3</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link 4</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <img src="./images/cheetsheet.jpg" alt="img-fluid">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
     
 </body>
 </html>
